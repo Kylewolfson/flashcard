@@ -1,0 +1,10 @@
+$(document).ready(function(){
+  $(".heading").click(function(){
+    $(this).toggleClass("hide");
+    $(this).next().toggleClass("hide");
+  });
+  $(".hide").click(function(){
+    $(this).toggleClass("hide");
+    $(this).prev().toggleClass("hide");
+  });
+});
